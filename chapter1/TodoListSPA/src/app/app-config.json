@@ -1,7 +1,7 @@
 {
   "auth": {
-    "clientId": "Enter the Client Id (aka 'Application ID')",
-    "authority": "https://login.microsoftonline.com/Enter_the_Tenant_Id_Here",
+    "clientId": "e0d54fb2-a929-49e7-a661-5e64686f2b69",
+    "authority": "https://login.microsoftonline.com/ktsadmin.onmicrosoft.com",
     "validateAuthority": true,
     "redirectUri": "http://localhost:4200",
     "postLogoutRedirectUri": "http://localhost:4200",
@@ -15,8 +15,8 @@
     },
     "resources": {
       "todoListApi": {
-        "resourceUri": "Enter the TodoList Web APIs base address, e.g. 'https://localhost:44351/api/todolist'",
-        "resourceScope": "Enter the API scopes as declared in the app registration 'Expose an Api' blade in the form of 'api://{clientId}/access_as_user'"
+        "resourceUri": "https://localhost:44351/api/todolist",
+        "resourceScope": "f1461f48-3677-4fe9-a348-471c559a63c6/access_as_user"
       }
     }     
 }
