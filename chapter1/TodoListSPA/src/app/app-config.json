@@ -1,7 +1,7 @@
 {
   "auth": {
-    "clientId": "e0d54fb2-a929-49e7-a661-5e64686f2b69",
-    "authority": "https://login.microsoftonline.com/ktsadmin.onmicrosoft.com",
+    "clientId": "f72b4dc4-7c38-4514-8989-f7ad41fa911a",
+    "authority": "https://login.microsoftonline.com/ariefshahgmail.onmicrosoft.com",
     "validateAuthority": true,
     "redirectUri": "http://localhost:4200",
     "postLogoutRedirectUri": "http://localhost:4200",
@@ -16,7 +16,7 @@
     "resources": {
       "todoListApi": {
         "resourceUri": "https://localhost:44351/api/todolist",
-        "resourceScope": "f1461f48-3677-4fe9-a348-471c559a63c6/access_as_user"
+        "resourceScope": "api://e6ef441a-def1-48d0-8109-02ee6cba39fd/access_as_user"
       }
-    }     
+    }
 }

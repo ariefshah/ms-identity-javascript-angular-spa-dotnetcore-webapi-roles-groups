@@ -9,6 +9,7 @@ using Microsoft.Identity.Web;
 using TodoListAPI.Models;
 using TodoListAPI.Utils;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net;
 
 namespace TodoListAPI
 {
@@ -33,6 +34,10 @@ namespace TodoListAPI
             // Setting configuration for protected web api
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddMicrosoftIdentityWebApi(Configuration);
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls
+            | SecurityProtocolType.Tls11
+            | SecurityProtocolType.Tls12;
 
             // The following lines code instruct the asp.net core middleware to use the data in the "roles" claim in the Authorize attribute and User.IsInrole()
             // See https://docs.microsoft.com/aspnet/core/security/authorization/roles for more info.
